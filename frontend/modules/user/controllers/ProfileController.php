@@ -9,6 +9,7 @@
 namespace frontend\modules\user\controllers;
 
 
+use Faker\Factory;
 use frontend\models\User;
 use yii\web\Controller;
 
@@ -16,11 +17,16 @@ class ProfileController extends Controller
 {
     public function actionView($id)
     {
-        $user = User::find(['id' => $id])->one();
+        $user = User::find()->where(['id' => $id])->one();
+
+
         return $this->render('view',[
         'user' => $user,
             ]);
     }
+
+
+
 
 
 }

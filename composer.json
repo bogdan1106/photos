@@ -3,6 +3,7 @@
     "require": {
         "yiisoft/yii2-redis": "~2.0.0",
         "filsh/yii2-oauth2-server": "*",
-        "yiisoft/yii2-authclient": "^2.1"
+        "yiisoft/yii2-authclient": "^2.1",
+        "yiisoft/yii2-faker": "^2.0"
     }
 }
